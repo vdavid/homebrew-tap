@@ -22,13 +22,16 @@ the boost.
 ## Install
 
 ```sh
+brew trust --cask vdavid/tap/cmdr
 brew tap vdavid/tap
 brew install --cask cmdr
 ```
+
+The `brew trust` step comes first: Homebrew asks you to okay a third-party tap once before it loads anything from it.
 
 ## Notes
 
 - Cmdr updates itself. The cask sets `auto_updates true`, so `brew upgrade` leaves it alone unless you pass `--greedy`.
 - The cask in this tap is bumped automatically on every Cmdr release, so it always points at the latest version.
-- Requires macOS 12 Monterey or later.
+- Requires macOS 11 Big Sur or later.
 - Free for personal use, paid for commercial use. See [getcmdr.com](https://getcmdr.com) for the details.

@@ -1,25 +1,25 @@
 class Smb2 < Formula
   desc "Command-line SMB2/3 client: list, stat, move, and delete files on a share without mounting it"
   homepage "https://github.com/vdavid/smb2"
-  version "0.4.23"
+  version "0.4.24"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.23/smb2-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "19be646b4703774a23c8eb76a0bf356d3912403dbd5d714461740ec5db4e1162"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.24/smb2-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "58b55daa22c1c229bd9eb7aded4881736f739b06cc3dd74c3571f10409130f2c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.23/smb2-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "29c8f34373e609da7958070d54c31bac29088deda52e16398d6fa74cf6fb4485"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.24/smb2-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "df463400277c2405ff6eedb31a02ce41a4250497bc44337079cc99a50946cb18"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.23/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d8919ba93c01e017aa36f17b1c6fbd9d1de058c620e185830dc1c215d0301e22"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.24/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c8857c131387f262c974e636d64a28b0185b6fd116f7fa888dea402940c09c15"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.23/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "521ea8301bf352abbd0946b1de491969f58ecf118bb2fa78c59ad22eb1a1036e"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.24/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7dca6704416920a6eb8bb1baa831ebbf681b3b01ddb45b1512b526d01bfbea0a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

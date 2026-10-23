@@ -1,25 +1,25 @@
 class MtpRs < Formula
   desc "Universal MTP file transfer CLI built on mtp-rs"
   homepage "https://github.com/vdavid/mtp-rs"
-  version "0.9.1"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.9.1/mtp-rs-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "2429dca838c046e89a8d32b1a3891ade2359464a7addd8b7ae0680be63aac22d"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.10.0/mtp-rs-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "6585184d41900b40f2baee38784bb5702f5f3caf9cf8a17f4908e91650471af0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.9.1/mtp-rs-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "be0784455d2fca862f1761a3dc787250c42dd7ad864543ade80897b7ef777da1"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.10.0/mtp-rs-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "3e1c3f24d000abad342e5b349051979edd40d4525b8b76fac3c4ba1ed2ba0c1c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.9.1/mtp-rs-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3c6c3c0d3e4ae2bd78abfa5aa26c9ed579b43a0f982db4af6a4945aebd7730ba"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.10.0/mtp-rs-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "082f991ee036e6ca5f57bfd64bda3e2b4017d737675042b00da8bdaa169cf329"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.9.1/mtp-rs-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cb22715f04b38ea503b8281363ae708158d3c9ae7771c411b2422ba65a29d405"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.10.0/mtp-rs-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "722a8de42d2468c23388dbb03f6ce4eefe462a1a416a80a4914d8901fac4b2b9"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

@@ -1,25 +1,25 @@
 class Smb2 < Formula
   desc "Command-line SMB2/3 client: list, stat, move, and delete files on a share without mounting it"
   homepage "https://github.com/vdavid/smb2"
-  version "0.4.28"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.28/smb2-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "8a389763bdfa8583db59567850e93061f841f0ae154c33e70dc4d367af53cfdb"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.5.0/smb2-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "82513fe7e38a3ae5c6887d74775e5b9c04e153632979a727d413fa1ecbbaee93"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.28/smb2-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "75648f928c3a4677995b066cd293f325f5e827f70f392f0e462320b2fe950983"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.5.0/smb2-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "b54ff66f21977ddf3eadf5427da9afa6487b77201383c5eb70f09550c3824cdd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.28/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1ccd6049bb7d3b33e70575eba66f2bba64330d7f2b3abe917dbd451c2a737039"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.5.0/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7c35770b318510d248c57a3406b72a95ffb6408ac4add2f29228354238349176"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.4.28/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5a08cfc8d96ab304f7525fdaca74ee10ef0b2cf0ab361b48ad633baa0d93ab05"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.5.0/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e50d9161d9a2564a598141f180c4fd2dadd22b12ce98138d77bb64f8ff6e146c"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

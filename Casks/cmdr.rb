@@ -18,6 +18,9 @@ cask "cmdr" do
   depends_on macos: :big_sur
 
   app "Cmdr.app"
+  # The `cmdr <path>` terminal command, a script inside the bundle. Homebrew links it into its
+  # own bin, and Cmdr's app menu then reads it as Homebrew's and leaves it alone.
+  binary "#{appdir}/Cmdr.app/Contents/Resources/bin/cmdr"
 
   # Hand "Show in Finder" back before leaving. macOS routes it by bundle id, through the
   # undocumented NSFileViewer key of the global preferences domain, and when that id names an
@@ -48,6 +51,7 @@ cask "cmdr" do
   zap trash: [
     "~/Library/Application Support/com.veszelovszki.cmdr",
     "~/Library/Caches/com.veszelovszki.cmdr",
+    "~/Library/HTTPStorages/com.veszelovszki.cmdr",
     "~/Library/Logs/com.veszelovszki.cmdr",
     "~/Library/Preferences/com.veszelovszki.cmdr.plist",
     "~/Library/Saved Application State/com.veszelovszki.cmdr.savedState",

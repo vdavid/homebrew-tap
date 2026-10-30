@@ -1,25 +1,25 @@
 class MtpRs < Formula
   desc "Universal MTP file transfer CLI built on mtp-rs"
   homepage "https://github.com/vdavid/mtp-rs"
-  version "0.11.1"
+  version "0.11.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.1/mtp-rs-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "4a01792403b3cd060173afa8c6dd94ebf90038a79540fb8a9da5a7713cc1dd4a"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.2/mtp-rs-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "8846b64460aa57936dcd94c6ca5eb9fb0b1fb5ae961f74de27de3b3025dc710d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.1/mtp-rs-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "fd65f012edcba7c12eb48c69d030c8cb428426b2a4dc7ca4da38eaa177a6b2f4"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.2/mtp-rs-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "d67c89b2e05f30872fcc9636974aa5f8f885dc89d839d7490f35f88157e636fd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.1/mtp-rs-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cef7c35262380119eb1eced79d690a1679a6146dd7da7795d0c9b752f4014126"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.2/mtp-rs-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e72ab184a360e166639ae223220899a0008d00dca9372d5d9e4628562a2988c8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.1/mtp-rs-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ac732be53c3bd674ab50302dc07d0f3dedec5900b2d5d3098e9d0599abc99f07"
+      url "https://github.com/vdavid/mtp-rs/releases/download/mtp-rs-cli-v0.11.2/mtp-rs-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9c45f06792afc32037286d56bcfd3d4e37f31eafbf886a52832f7f0fb1600838"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

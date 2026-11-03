@@ -1,25 +1,25 @@
 class Smb2 < Formula
   desc "Command-line SMB2/3 client: list, stat, move, and delete files on a share without mounting it"
   homepage "https://github.com/vdavid/smb2"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.6.0/smb2-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "d5b5d182d840a7f57f970bde162ded824fc1651e46f46c8b5ccbbb45a96c6b85"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.7.0/smb2-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "658d1bafb6f601c5d3fe94ca5c0502394d80d69b49d4846b1cb5f4ff4431bdf3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.6.0/smb2-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "d123815a9f59b111c46ff97ed9f1211986a5cc1c8ed58147803ecdd47a648547"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.7.0/smb2-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a6716231b464e59dd17b99516c448e77561d1321a908609ade3fc28690357795"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.6.0/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ea84ccaae65740d7a296ee86d856e614a19647717daa43851936ba4d1d1461a5"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.7.0/smb2-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e313bff958e338caf1a75159083152ea2d11b4a3cf19d9576beda957aa34b27f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.6.0/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3a6ac3c50ccc989092fce8e8aa95690b19811c743f82e2697c37d2ffb5b3b4dd"
+      url "https://github.com/vdavid/smb2/releases/download/smb2-cli-v0.7.0/smb2-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7c5a2e7949f6775780d96503babe5c89a40c05253c9ba0377505f8b5c8103b3e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

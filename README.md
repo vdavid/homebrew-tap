@@ -5,12 +5,12 @@ A personal Homebrew tap for [Cmdr](https://getcmdr.com), a fast, keyboard-driven
 ## Help bring Cmdr to the main Homebrew cask
 
 Cmdr got rejected from the official [homebrew-cask](https://github.com/Homebrew/homebrew-cask) repo. Not because of the
-app, but because the [vdavid/cmdr](https://github.com/vdavid/cmdr) repo doesn't meet Homebrew's notability bar yet.
+app, but because the [getcmdr/cmdr](https://github.com/getcmdr/cmdr) repo doesn't meet Homebrew's notability bar yet.
 Self-submitted casks need the source repo to have at least 90 forks, 90 watchers, or 225 stars, and Cmdr isn't there.
 You can see the rejected submission here: [homebrew-cask PR #268854](https://github.com/Homebrew/homebrew-cask/pull/268854).
 
 If you want a clean `brew install cmdr` with no tap, you can now help with three clicks. Head to
-[github.com/vdavid/cmdr](https://github.com/vdavid/cmdr) and:
+[github.com/getcmdr/cmdr](https://github.com/getcmdr/cmdr) and:
 
 1. Star it.
 2. Watch it.

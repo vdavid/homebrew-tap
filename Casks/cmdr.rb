@@ -1,6 +1,6 @@
 cask "cmdr" do
-  version "0.60.0"
-  sha256 "128fef1afa73de361836ff2b1cfeedbcefcd8be21836de21169b1ab297555f7e"
+  version "0.61.0"
+  sha256 "03ae65626252c7459ada35979c9c23303a469637543fa2e14f33e743f8bfce70"
 
   url "https://license.getcmdr.com/download/#{version}/universal"
   name "Cmdr"
